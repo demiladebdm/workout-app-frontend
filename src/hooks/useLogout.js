@@ -10,7 +10,7 @@ export const useLogout = () => {
         localStorage.removeItem('user')
 
         dispatch({ type: 'LOGOUT' })
-        workoutsDispatch({ type: 'SET_WORKOUTs', payload: null})
+        workoutsDispatch({ type: 'SET_WORKOUTS', payload: null})
     }
 
     return { logout }
